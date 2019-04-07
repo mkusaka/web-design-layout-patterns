@@ -1,0 +1,16 @@
+
+
+/* low resolution pc device */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+}
+
+/* tablet */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+}
+
+/* smart phone */
+@media screen and (max-width: 480px) {
+
+}
