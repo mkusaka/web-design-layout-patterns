@@ -1,0 +1,29 @@
+<head>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <header>
+    <h1>3カラムレイアウト</h1>
+  </header>
+  <section id="main" class="js-matchHeight">
+    <div class="center js-matchHeight">
+      中央カラム
+    </div>
+    <div class="left js-matchHeight">
+      左カラム
+    </div>
+    <div class="right js-matchHeight">
+      右カラム
+    </div>
+  </section>
+  <footer>
+    <p>footer</p>
+  </footer>
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js'></script>
+  <script>
+    $(function () {
+      $('js-matchHeight').matchHeight();
+    })
+  </script>
+</body>
