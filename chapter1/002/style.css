@@ -1,13 +1,42 @@
+/* all devices */
 
+.slicknav_menu {
+  display: none;
+}
 
 /* low resolution pc device */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .slicknav_menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 1000;
+  }
+
+  #menu {
+    display: none;
+  }
 
 }
 
 /* tablet */
 @media screen and (max-width: 768px) and (min-width: 481px) {
 
+  .slicknav_menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 1000;
+  }
+
+  #menu {
+    display: none;
+  }
 }
 
 /* smart phone */
