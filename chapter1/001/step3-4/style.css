@@ -1,0 +1,36 @@
+.left {
+  float: left;
+  width: 300px;
+  background-color: #ccffff;
+  height: 500px;
+}
+
+.right {
+  float: right;
+  width: 100%;
+  margin: 0 0 0 -300px;
+}
+
+.content {
+  margin: 0 0 0 300px;
+  background: #ccc;
+  background-color: #ffffcc;
+  height: 500px;
+}
+
+#main {
+  background-color: #ccffff;
+}
+
+/*
+  after疑似要素でmain内の最後の要素として↓を追加する
+  これで左カラム要素の高さが足りなくても右カラム要素に高さを合わせるようになる
+*/
+#main::after {
+  /* ater/before疑似要素にはcontent必須とか？要調査 */
+  content: "";
+  /* ここはちょっと謎だけど、処理終わったあとにblock要素を追加しているのかな */
+  display: block;
+  /* floatがheightを無視しちゃうのを解除 */
+  clear: both;
+}
